@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ирочка Трунова — копирайтинг, SMM, контент</title>
+  <meta name="description" content="Креативный копирайтер, SMM и контент-маркетолог. Тексты, которые продают и которые дочитывают до конца." />
+  <!-- превью при отправке ссылки в мессенджерах/соцсетях -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ирина Трунова — копирайтинг, SMM, контент" />
+  <meta property="og:description" content="Тексты, которые продают — и которые дочитывают до конца. SEO, статьи, Reels, посты, промостраницы." />
+  <meta property="og:image" content="assets/cats/oiia.gif" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐱</text></svg>" />
+</head>
+<body>
+  <!-- мягкие цветные пятна на фоне -->
+  <div class="blobs" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+  </div>
+
+  <!-- ================= НАВИГАЦИЯ ================= -->
+  <header class="nav">
+    <a href="#top" class="nav__logo">
+      <img src="assets/me-avatar.png" alt="" class="nav__cat" /> Ирочка Трунова
+    </a>
+    <nav class="nav__links">
+      <a href="#about">О себе</a>
+      <a href="#results">Результаты</a>
+      <a href="#works">Работы</a>
+      <a href="#services">Что умею</a>
+      <a href="#skills">Скиллы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a href="#" class="btn btn--resume" id="resumeBtn">Скачать резюме (PDF)</a>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero__top">
+      <div class="hero__text" id="about">
+        <p class="hero__role" id="profileRole">Копирайтинг · SMM · контент-маркетинг</p>
+        <h1 class="hero__name" id="profileName">Ирочка Трунова</h1>
+        <p class="hero__headline" id="profileHeadline"></p>
+        <p class="hero__about" id="profileAbout" data-anchor="about"></p>
+        <div class="hero__cta">
+          <a href="#" class="btn btn--primary" id="ctaTelegram">Обсудить задачу →</a>
+          <a href="#works" class="btn btn--ghost">Листать кейсы</a>
+          <a href="#" class="btn btn--ghost" id="resumeBtn2">Резюме</a>
+        </div>
+      </div>
+
+      <div class="hero__media">
+        <img id="profilePhoto" class="hero__avatar" alt="Ирина Трунова" width="360" height="296" />
+      </div>
+    </div>
+
+    <!-- цифры доверия -->
+    <div class="stats" id="statsRow"></div>
+  </section>
+
+  <!-- ================= РЕЗУЛЬТАТЫ ================= -->
+  <section class="results" id="results">
+    <div class="services__head">
+      <img class="services__cat" src="assets/cats/press.png" alt="" loading="lazy" width="70" height="70" />
+      <div>
+        <h2 class="section-title">Результаты работы</h2>
+      </div>
+    </div>
+    <div class="results__grid" id="resultsGrid"><!-- рендерится из data.js --></div>
+  </section>
+
+  <!-- ================= РАБОТЫ ================= -->
+  <section class="works" id="works">
+    <div class="works__head">
+      <img class="works__cat" src="assets/cats/typing.gif" alt="" loading="lazy" width="86" height="86" />
+      <div>
+        <h2 class="section-title">Мои работы</h2>
+      </div>
+    </div>
+
+    <div class="filters">
+      <div class="filters__group" id="groupFilters">
+        <span class="filters__label">Группировать:</span>
+        <button class="chip chip--active" data-group="project">По проектам</button>
+        <button class="chip" data-group="niche">По нишам</button>
+        <button class="chip" data-group="format">По форматам</button>
+        <button class="chip" data-group="social">По соцсетям</button>
+        <button class="chip" data-group="none">Все подряд</button>
+      </div>
+      <label class="best-toggle">
+        <input type="checkbox" id="bestOnly" />
+        <span><img src="assets/cats/crying.gif" alt="" class="ic">Только лучшее</span>
+      </label>
+    </div>
+
+    <div id="worksContainer" class="works__container"><!-- рендерится из data.js --></div>
+  </section>
+
+  <!-- ================= ЧТО Я УМЕЮ ================= -->
+  <section class="services" id="services">
+    <div class="services__head">
+      <img class="services__cat" src="assets/cats/dubi.gif" alt="" loading="lazy" width="70" height="70" />
+      <div>
+        <h2 class="section-title">Что я умею</h2>
+      </div>
+    </div>
+    <div class="services__list" id="servicesGrid"><!-- рендерится из data.js --></div>
+  </section>
+
+  <!-- ================= СКИЛЛЫ ================= -->
+  <section class="skills" id="skills">
+    <div class="skills__col">
+      <h2 class="section-title"><img src="assets/cats/oiia.gif" alt="" class="ic ic--lg" loading="lazy" width="40" height="40">Хард-скиллы</h2>
+      <p class="skills__sub">инструменты и форматы, в которых работаю</p>
+      <div class="chips" id="hardSkills"></div>
+    </div>
+
+    <div class="skills__col">
+      <h2 class="section-title"><img src="assets/cats/judge.gif" alt="" class="ic ic--lg" loading="lazy" width="40" height="40">Софт-скиллы</h2>
+      <p class="skills__sub">какой я в работе человечек</p>
+      <div class="stickers" id="softSkills"></div>
+    </div>
+  </section>
+
+  <!-- ================= КОНТАКТЫ ================= -->
+  <section class="contacts" id="contacts">
+    <h2 class="section-title contacts__title">Нужен текст или классные идеи, что пробивают баннерную слепоту? Пиши!</h2>
+    <div class="contacts__grid" id="contactsGrid"><!-- рендерится из data.js --></div>
+    <a href="#" class="btn btn--primary btn--big" id="resumeBtn3">⬇ Скачать резюме (PDF)</a>
+    <img src="assets/cats/cta.png" alt="мем-котик" class="contacts__cat" loading="lazy" />
+  </section>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
